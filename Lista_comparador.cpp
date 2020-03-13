@@ -14,11 +14,6 @@ struct Produto{
     string descricao;
 };
 
-bool comparaPreco(Produto a, Produto b){
-
-    return a.preco < b.preco;
-}
-
 void setItens(Produto &t){
 
     bool s;
@@ -39,6 +34,11 @@ void setItens(Produto &t){
     }while(s);
 
     t.descricao = desc;
+}
+
+bool comparaPreco(Produto a, Produto b){
+
+    return a.preco < b.preco;
 }
 
 ///////////////////////////////////
